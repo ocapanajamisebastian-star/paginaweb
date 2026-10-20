@@ -1,50 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Visita el Cotopaxi</title>
+
+    <link rel="stylesheet" href="estilos.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<body>
- <img src="imagenes/cotopaxi.jpg" class="img-thumbnail" alt="Volcán Cotopaxi" style="width: 300px;">   
-    <div class="container mt-4">
+<body >
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#section1">Seccion 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section2">Seccion 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section3">Seccion 3</a>
+      </li>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5 pt-5">
+  <figure class="text-center">
+    <h1 class="display-2">Visita el volcán Cotopaxi</h1>
+
+    <figcaption class="blockquote-footer">
+      <cite title="Source Title">El corazón del Ecuador</cite>
+    </figcaption>
+  </figure>
+</div>
+
+
+<div id="section1" class="container-fluid bg-primary p-3 text-white" style="padding:100px 20px;">
+    <h1 class="text-center mb-5">Datos generales de visitantes</h1>
+
+
+  <div class="row align-items-center g-5">
+
+    <div class="col-md-6">
+
+      <div class="ms-md-4">
+
+        <div class="mb-3">
+          <label for="username" class="form-label fw-bold">
+            Ingrese su nombre
+          </label>
+          <input type="text" class="form-control"
+                 id="username" name="nombre" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="quantity" class="form-label fw-bold">
+            Ingrese su edad
+          </label>
+          <input type="number" class="form-control"
+                 id="quantity" name="edad" min="20" max="45">
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label fw-bold">
+            Ingrese su email
+          </label>
+          <input type="email" class="form-control"
+                 id="email" name="email">
+        </div>
+
+        <p class="fw-bold">¿Es su primera visita al Cotopaxi?</p>
+
+        <div class="mb-3">
+          <input type="radio" class="btn-check"
+                 name="primeraVisita" id="visitaSi" value="si">
+          <label class="btn btn-success" for="visitaSi">Sí</label>
+
+          <input type="radio" class="btn-check"
+                 name="primeraVisita" id="visitaNo" value="no">
+          <label class="btn btn-danger" for="visitaNo">No</label>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-md-6 text-center">
+
+      <div class="bg-light text-dark rounded-4 shadow p-4">
+
+        <img src="imagenes/Tours.jpg.png"
+             class="img-fluid rounded-3 mb-3"
+             alt="Dueño de la agencia turística">
+
+        <h2 class="text-success">¡Te damos la bienvenida!</h2>
+
+        <p>
+          Te invitamos a vivir una experiencia inolvidable en uno de los lugares más fascinantes del Ecuador. Descubre la majestuosidad del volcán Cotopaxi, explora hermosos paisajes andinos, visita la laguna de Limpiopungo y disfruta de actividades rodeadas de naturaleza y aventura..
+        </p>
+
+        <p>
+          Ya sea que busques emocionantes caminatas, fotografías espectaculares o un momento de tranquilidad lejos de la rutina, ¡aquí encontrarás el destino perfecto para tu próxima aventura!
+        </p>
+
+      </div>
 
     </div>
 
-    <figure class="text-center">
-  <h1 class="display-2">visita el volcan cotopaxi.</h1>
-  <figcaption class="blockquote-footer"> <cite title="Source Title">el corazon del ecuador </cite>
-  </figcaption>
-</figure>
-
-
-<p class="fw-bold">Ingrese su nombre</p>
- <input type="text" id="username" name="nombre" required> <br>
-<p class="fw-bold">Ingrese su edad</p>
- <input type="number" id="quantity" name="quantity" min="20" max="45"><required> <br>
-<p class="fw-bold">Ingrese su email</p>
-<input type="email" id="email" name="email"><br>
-
-<blockquote class="blockquote"><p>
-    Es su primera visita al Cotopaxi:</blockquote>
-</p>
-
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-  <label class="form-check-label" for="inlineRadio1">si</label>
+  </div>
+  
+        <a href="#section2" class="btn btn-success btn-lg mt-3">
+            siguiente
+        </a>
 </div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-  <label class="form-check-label" for="inlineRadio2">no</label>
 </div>
 
- <div class="fw-bold">
-  <label for="exampleFormControlTextarea1" class="form-label">comentanos que te parecio esta experiencia </label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+<div id="section2" class="container-fluid bg-info p-3" style="padding:100px 20px;">
+
+     <div class="row">
+            <div class="col-md-8">
+              <h1>Informacion de viaje </h1>
+  <div class="mb-3">
+  
+<div class="row">
+  <div class="col-md-6 mb-3">
+    <label for="fechaLlegada" class="form-label">
+      Fecha de llegada:
+    </label>
+
+    <input type="date" class="form-control"
+           id="fechaLlegada" name="fechaLlegada">
+  </div>
+
+  <div class="col-md-6 mb-3">
+    <label for="fechaSalida" class="form-label">
+      Fecha de salida:
+    </label>
+
+    <input type="date" class="form-control"
+           id="fechaSalida" name="fechaSalida">
+  </div>
 </div>
-<figcaption class="blockquote-footer"> <cite title="Source Title">que actividades desea realizar </cite>
+
+
+  <label for="sel1" class="form-label">que medio de transporte a utilizado:</label>
+    <select class="form-select" id="sel1" name="sellist1">
+      <option>vehiculo</option>
+      <option>autobus</option>
+      <option>bicicleta</option>
+      <option>motocicleta</option>
+      <option>bus turistico</option>
+    </select>
+    <br>
+</div>
+
+<p class="fw-bold">por donde nos conocio</p>
+
+<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+  <label class="btn btn-outline-primary" for="btnradio1">familiares</label>
+
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+  <label class="btn btn-outline-primary" for="btnradio2">amigos</label>
+
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+  <label class="btn btn-outline-primary" for="btnradio3">redes sociales</label>
+</div>
+
+ <p class="fw-bold">cual es su principal motivo de visitarnos :</p>
+
+<select class="form-select" aria-label="Default select example">
+  <option selected>----lista de actividades----</option>
+  <option value="1">Senderismo</option>
+  <option value="2">fotografia</option>
+  <option value="3">Visitar la Laguna de Limpiopungo</option>
+  <option value="4">Ciclismo de montaña y cabalgatas</option>
+  <option value="5">Acampar y hacer picnics</option>
+</select>
+
+<p class="fw-bold">¿Vendrás acompañado?</p>
+
+<button type="button" class="btn btn-success" onclick="habilitar()">Sí</button>
+<button type="button" class="btn btn-danger" onclick="deshabilitar()">No</button>
+
+<br><br>
+
+<div class="container mt-3">
+  <form action="/action_page.php">
+    <input
+      class="form-control"
+      list="browsers"
+      name="browser"
+      id="browser"
+      disabled
+      placeholder="Selecciona una opción"
+    >
+
+    <datalist id="browsers">
+      <option value="grupo turístico">
+      <option value="Familiares">
+      <option value="solo">
+      <option value="amigos">
+      <option value="pareja">
+    </datalist>
+  </form>
+</div>
+
+<br><br>
+
+<script>
+  function habilitar() {
+    document.getElementById("browser").disabled = false;
+  }
+
+  function deshabilitar() {
+    document.getElementById("browser").disabled = true;
+    document.getElementById("browser").value = "";
+  }
+</script><br>
+             </div>
+            <div class="col-md-4">
+               <img src="imagenes/cotopaxi.jpg" class="float-end img-thumbnail" alt="Volcán Cotopaxi" width="400" height="400">   
+        </div>
+      </div>
+      <a href="#section3" class="btn btn-success btn-lg mt-3">
+            siguiente
+        </a>
+      </div>
+
+ 
+  
+</div>
+
+<div id="section3" class="container-fluid bg-success p-3" style="padding:100px 20px;">
+  <h1>Actividades turisticas </h1>
+
+  <div class="container mt-3">
+  <h2>Actividades turisticas</h2>
+  <p>El Parque Nacional Cotopaxi es uno de los destinos naturales más impresionantes del Ecuador, reconocido por sus hermosos paisajes, su majestuoso volcán y su gran diversidad de flora y fauna. Este lugar ofrece diversas actividades para los amantes de la naturaleza y la aventura, como caminatas por senderos, fotografía de paisajes, observación de animales, visitas a la laguna de Limpiopungo y recorridos por zonas turísticas autorizadas. Además, permite disfrutar del aire libre, conocer la riqueza natural del país y compartir momentos inolvidables con familiares y amigos. Cada actividad brinda una oportunidad para descubrir la belleza del Cotopaxi y fomentar el respeto y la conservación del medioambiente. .</p>
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+          1.Caminata 
+        </a>
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+        2.Fotografia de paisajes 
+      </a>
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+          3.Observacion de flora y fauna 
+        </a>
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+          4.Visita a la laguna de Limpiopungo 
+        </a>
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSix">
+          5.Picnic o descanso 
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+          <div class="row">
+            <div class="col-md-8">
+              <p>Disfruta de caminatas por los senderos del Parque Nacional Cotopaxi, rodeado de impresionantes paisajes naturales y aire puro. Es una excelente oportunidad para realizar actividad física, explorar la naturaleza y disfrutar de una experiencia diferente.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="imagenes/caminata.jpg" class="img-fluid" alt="Caminata en el Cotopaxi" width="300" height="300">  
+        </div>
+      </div>
+      </div>
+      <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+        <div class="row">
+          <div class="col-md-8">
+            <p>Captura la belleza del volcán Cotopaxi, sus extensas llanuras, montañas y hermosos paisajes. Es una actividad ideal para los amantes de la fotografía que desean llevarse recuerdos inolvidables de su visita..</p>
+          </div>
+          <div class="col-md-4">
+            <img src="imagenes/paisaje.jpg" class="img-fluid" alt="Fotografía en el Cotopaxi" width="300" height="300">
+          </div>
+        </div>
+      </div>
+       <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+        <div class="row">
+          <div class="col-md-8">
+            <p>Descubre la diversidad de plantas y animales que habitan en el parque. Durante el recorrido, podrás observar especies propias de los ecosistemas andinos y conocer la importancia de proteger la biodiversidad.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="imagenes/fauna.jpg" class="img-fluid" alt="Biodiversidad en el Cotopaxi" width="300" height="300">
+          </div>
+        </div>
+      </div>
+ <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+        <div class="row">
+          <div class="col-md-8">
+            <p>Visita la laguna de Limpiopungo, un lugar perfecto para contemplar el paisaje andino y disfrutar de la tranquilidad de la naturaleza. También podrás observar aves y obtener fotografías con el volcán como fondo, cuando las condiciones climáticas lo permitan.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="imagenes/lahuna.jpg" class="img-fluid" alt="Laguna de Limpiopungo" width="300" height="300">
+          </div>
+      </div>
+ </div>
+      <div id="collapseSix" class="collapse" data-bs-parent="#accordion">
+        <div class="row">
+          <div class="col-md-8">
+            <p>Disfruta de un momento de descanso en las áreas autorizadas del parque, donde podrás relajarte, compartir alimentos y disfrutar de la compañía de tus acompañantes. Es una excelente manera de recargar energías mientras contemplas la belleza natural del Cotopaxi.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="imagenes/picnic.jpg" class="img-fluid" alt="Picnic en el Cotopaxi" width="300" height="300">
+          </div> </div>
+      </div>
+    
+</div>
+
+
+</body>
+
+
+<div class="container mt-3">
+  <h2>Comentarios</h2>
+  <p>Nos encantaría conocer tu opinión sobre tu experiencia en el Parque Nacional Cotopaxi. Por favor, déjanos tus comentarios y sugerencias para mejorar nuestros servicios y hacer que tu visita sea aún más memorable.</p>
+
+<textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+</div><dr>
+
+  <div class="d-grid gap-3">
+    <button type="button" class="btn btn-primary">Enviar </button>
+    <button type="button" class="btn btn-danger">Cancelar </button>
+  </div>
+</div>
   </figcaption>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
